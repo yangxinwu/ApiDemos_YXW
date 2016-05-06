@@ -25,7 +25,7 @@ public class Animation extends Activity {
         @Override
         public void onClick(View v) {
             startActivity(new Intent(Animation.this, HelloWorld.class));
-            //activity 切换时的动画
+            //activity 切换时的动画123
             overridePendingTransition(R.anim.fade,R.anim.hold);
         }
     };
