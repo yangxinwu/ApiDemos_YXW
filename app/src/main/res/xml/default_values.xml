@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--首选项框架 http://byandby.iteye.com/blog/1044916-->
+   <CheckBoxPreference
+       android:key = "default_checkbox"
+       android:defaultValue = "false"
+       android:title="@string/title_checkbox_preference"
+       android:summary="@string/summary_checkbox_preference"
+       />
+    <SwitchPreference
+        android:key= "default_switch"
+        android:defaultValue="false"
+        android:title="@string/title_switch_preference"
+        android:summary="@string/summary_switch_preference"
+        />
+    <EditTextPreference
+        android:key="default_edittext"
+        android:defaultValue="@string/default_value_edittext_preference"
+        android:title="@string/title_edittext_preference"
+        android:summary="@string/summary_edittext_preference"
+        android:dialogTitle="@string/dialog_title_edittext_preference" />
+
+    <ListPreference
+        android:key="default_list"
+        android:defaultValue="@string/default_value_list_preference"
+        android:title="@string/title_list_preference"
+        android:summary="@string/summary_list_preference"
+        android:entries="@array/entries_list_preference"
+        android:entryValues="@array/entryvalues_list_preference"
+        android:dialogTitle="@string/dialog_title_list_preference" />
+
+</PreferenceScreen>
